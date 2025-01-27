@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,12 +16,16 @@
             <th>Acciones</th>
         </tr>
         <?php
+        // Incluye el archivo de conexión a la base de datos
         include 'db.php';
 
+        // Consulta SQL para seleccionar todos los registros de la tabla 'libros'
         $sql = "SELECT * FROM libros";
         $result = $conn->query($sql);
 
+        // Verifica si hay resultados en la consulta
         if ($result->num_rows > 0) {
+            // Itera sobre cada fila de resultados y genera una fila de tabla HTML
             while($row = $result->fetch_assoc()) {
                 echo "<tr>
                         <td>" . $row["id"]. "</td>
@@ -35,9 +40,11 @@
                       </tr>";
             }
         } else {
+            // Si no hay resultados, muestra un mensaje indicando que no hay libros
             echo "<tr><td colspan='6'>No hay libros</td></tr>";
         }
 
+        // Cierra la conexión a la base de datos
         $conn->close();
         ?>
     </table>
