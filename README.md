@@ -16,52 +16,54 @@ PHP >= 7.4
 
 - Composer (opcional, si gestionas dependencias)
 
-Servidor web (Apache, Nginx, etc.)
+- Servidor web (Apache, Nginx, etc.)
 
-Base de datos MySQL o compatible
+- Base de datos MySQL o compatible
 
-Extensiones PHP habilitadas:
+# Extensiones PHP habilitadas:
 
-pdo_mysql para PDO
+- pdo_mysql para PDO
 
-mysqli para MySQLi
+- mysqli para MySQLi
 
-Instalación
+# Instalación
 
-Clonar el repositorio:
+- Clonar el repositorio:
 
+```
 git clone https://github.com/tu-usuario/tu-repositorio.git
 cd tu-repositorio
+```
 
-Configurar la base de datos:
+# Configurar la base de datos:
 
-Crea una base de datos MySQL.
+## Crea una base de datos MySQL.
 
 Importa el archivo database.sql incluido en el proyecto para inicializar las tablas necesarias:
-
+```
 mysql -u usuario -p nombre_base_datos < database.sql
-
-Configurar las credenciales:
+```
+## Configurar las credenciales:
 
 Copia el archivo de ejemplo de configuración:
-
+```
 cp config.example.php config.php
-
+```
 Edita config.php con tus credenciales de base de datos.
 
-Configurar dependencias (opcional, si usas Composer):
-
+## Configurar dependencias (opcional, si usas Composer):
+```
 composer install
+```
+## Inicia el servidor:
 
-Inicia el servidor:
-
-Usando el servidor de desarrollo de PHP:
-
+1 Usando el servidor de desarrollo de PHP:
+```
 php -S localhost:8000
+```
+2 configura tu servidor web favorito (por ejemplo, Apache o Nginx).
 
-O configura tu servidor web favorito (por ejemplo, Apache o Nginx).
-
-Uso
+### Uso
 
 Abre tu navegador y visita: http://localhost:8000.
 
