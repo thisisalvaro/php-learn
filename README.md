@@ -1,16 +1,20 @@
 # php-learn
 
-#PHP Database Project
+# PHP Database Project
 
 Este repositorio contiene un proyecto en PHP diseñado para interactuar con bases de datos de manera eficiente. Utiliza MySQLi o PDO para realizar consultas seguras y optimizadas.
 
-#Requisitos
+# Requisitos
 
--Para ejecutar este proyecto, asegúrate de tener instalado:
+- Para ejecutar este proyecto, asegúrate de tener instalado:
+
+```
 
 PHP >= 7.4
 
--Composer (opcional, si gestionas dependencias)
+```
+
+- Composer (opcional, si gestionas dependencias)
 
 Servidor web (Apache, Nginx, etc.)
 
